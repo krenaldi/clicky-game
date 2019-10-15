@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "image": "../images/family-guy-1.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-1.jpeg"
   },
   {
     "id": 2,
-    "image": "../images/family-guy-2.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-2.jpeg"
   },
   {
     "id": 3,
-    "image": "../images/family-guy-3.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-3.jpeg"
   },
   {
     "id": 4,
-    "image": "../images/family-guy-4.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-4.jpeg"
   },
   {
     "id": 5,
-    "image": "../images/family-guy-5.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-5.jpeg"
   },
   {
     "id": 6,
-    "image": "../images/family-guy-6.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-6.jpeg"
   },
   {
     "id": 7,
-    "image": "../images/family-guy-7.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-7.jpeg"
   },
   {
     "id": 8,
-    "image": "../images/family-guy-8.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-8.jpeg"
   },
   {
     "id": 9,
-    "image": "../images/family-guy-9.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-9.jpeg"
   },
   {
     "id": 10,
-    "image": "../images/family-guy-10.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-10.jpeg"
   },
   {
     "id": 11,
-    "image": "../images/family-guy-11.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-11.jpeg"
   },
   {
     "id": 12,
-    "image": "../images/family-guy-12.jpeg"
+    "image": "https://github.com/krenaldi/clicky-game/blob/master/public/images/family-guy-12.jpeg"
   }
 ]
