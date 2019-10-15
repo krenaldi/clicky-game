@@ -1,3 +1,8 @@
+### Family Guy Clicky Game
+
+Simple memory game using React. User scores by clicking on an image that has not been clicked on. If the user clicks on an image that has been previously clicked on, the game is over and resets with the high score from that game listed.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
