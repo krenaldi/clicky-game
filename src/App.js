@@ -2,35 +2,35 @@ import React, { Component } from "react";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
-import friends from "./friends.json";
+import Score from "./components/Score";
+import cards from "./cards.json";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    cards
   };
 
   removeFriend = id => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    const cards = this.state.cards.filter(card => card.id !== id);
+    // Set this.state.cards equal to the new cards array
+    this.setState({ cards });
   };
 
-  // Map over this.state.friends and render a Card component for each friend object
+  // Map over this.state.cards and render a Card component for each Card object
   render() {
     return (
       <Wrapper>
-        <Header>Friends List</Header>
-        {this.state.friends.map(friend => (
+        <Header>Family Guy Clicky Game
+        </Header>
+          <Score />
+        {this.state.cards.map(card => (
           <Card
             removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            id={card.id}
+            key={card.id}
+            image={card.image}
           />
         ))}
       </Wrapper>
