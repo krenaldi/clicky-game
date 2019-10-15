@@ -14,13 +14,34 @@ class App extends Component {
   };
 
   gameOver = () => {
-    
+    if (this.state.score > this.state.highscore) {
+      this.setState({ highscore: this.state.score })
+    }
+    this.state.cards.forEach(card => {
+      card.count = 0;
+    });
+    alert(`Game Over \nScore: ${this.state.score}`);
+    this.setState({ score: 0 });
+    return true;
   }
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const cards = this.state.cards.filter(card => card.id !== id);
-    // Set this.state.cards equal to the new cards array
-    this.setState({ cards });
+
+
+  // Find and randomly arrange this.state.card for cards after each click
+  clickCount = id => {
+    this.state.cards.find((o, i) => {
+      if (o.id === id) {
+        if (cards[i].count === 0) {
+          cards[i].count = cards[i].count + 1;
+          this.setState({ score: this.state.score + 1 }, function () {
+            console.log(this.state.score);
+          });
+          this.state.cards.sort(() => Math.random() - 0.5)
+          return true;
+        } else {
+          this.gameOver();
+        }
+      }
+    });
   };
 
   // Map over this.state.cards and render a Card component for each Card object
@@ -29,10 +50,10 @@ class App extends Component {
       <Wrapper>
         <Header>Family Guy Clicky Game
         </Header>
-          <Score highscore={this.state.highscore} score={this.state.score}/>
+        <Score highscore={this.state.highscore} score={this.state.score} />
         {this.state.cards.map(card => (
           <Card
-            removeFriend={this.removeFriend}
+            clickCount={this.clickCount}
             id={card.id}
             key={card.id}
             image={card.image}
